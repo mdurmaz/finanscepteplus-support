@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinansCepte+ - Destek</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #4A90E2 0%, #357ABD 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+        
+        .content {
+            padding: 40px 30px;
+        }
+        
+        .section {
+            margin-bottom: 40px;
+        }
+        
+        .section h2 {
+            color: #4A90E2;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e0e0e0;
+        }
+        
+        .contact-info {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .contact-info p {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+        
+        .contact-info a {
+            color: #4A90E2;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        
+        .faq-item {
+            margin-bottom: 20px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            border-left: 4px solid #4A90E2;
+        }
+        
+        .faq-item h3 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+        
+        .faq-item p {
+            color: #666;
+            line-height: 1.8;
+        }
+        
+        .button {
+            display: inline-block;
+            background: #4A90E2;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.3s;
+            margin-top: 10px;
+        }
+        
+        .button:hover {
+            background: #357ABD;
+        }
+        
+        .footer {
+            background: #f8f9fa;
+            padding: 30px;
+            text-align: center;
+            color: #666;
+            border-top: 1px solid #e0e0e0;
+        }
+        
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .content {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📱 FinansCepte+</h1>
+            <p>Destek ve Yardım Merkezi</p>
+        </div>
+        
+        <div class="content">
+            <div class="section">
+                <h2>📧 İletişim</h2>
+                <div class="contact-info">
+                    <p><strong>E-posta:</strong> <a href="mailto:destek@finanscepte.com">destek@finanscepte.com</a></p>
+                    <p>Herhangi bir sorunuz, öneriniz veya geri bildiriminiz için bizimle iletişime geçebilirsiniz.</p>
+                    <p>Genellikle 24-48 saat içinde yanıt veriyoruz.</p>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>❓ Sık Sorulan Sorular</h2>
+                
+                <div class="faq-item">
+                    <h3>Uygulamayı nasıl kullanırım?</h3>
+                    <p>FinansCepte+ uygulaması ile yatırımlarınızı takip edebilir, alarmlar kurabilir ve portföyünüzü yönetebilirsiniz. Ana ekrandan yatırım ekleyerek başlayabilirsiniz.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Verilerim güvende mi?</h3>
+                    <p>Evet, tüm verileriniz güvenli bir şekilde saklanmaktadır. Firebase güvenlik altyapısı kullanılmaktadır ve verileriniz şifrelenmiştir.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Uygulama ücretsiz mi?</h3>
+                    <p>Evet, FinansCepte+ tamamen ücretsizdir ve reklam içermez.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Bir hata ile karşılaştım, ne yapmalıyım?</h3>
+                    <p>Lütfen bize e-posta gönderin ve hatanın detaylarını, ekran görüntülerini paylaşın. En kısa sürede sorunu çözmek için çalışacağız.</p>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>🔒 Gizlilik Politikası</h2>
+                <p>Gizlilik politikamızı okumak için <a href="privacy.html" class="button">Gizlilik Politikası</a> sayfasını ziyaret edebilirsiniz.</p>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>&copy; 2025 FinansCepte+. Tüm hakları saklıdır.</p>
+        </div>
+    </div>
+</body>
+</html>
+
