@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinansCepte+ - Hesap Silme</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .content {
+            padding: 40px 30px;
+        }
+        
+        .section {
+            margin-bottom: 40px;
+        }
+        
+        .section h2 {
+            color: #e74c3c;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e0e0e0;
+        }
+        
+        .section h3 {
+            color: #333;
+            font-size: 1.3em;
+            margin: 25px 0 15px 0;
+        }
+        
+        .section p {
+            margin-bottom: 15px;
+            color: #666;
+            line-height: 1.8;
+        }
+        
+        .section ul {
+            margin-left: 30px;
+            margin-bottom: 15px;
+            color: #666;
+        }
+        
+        .section li {
+            margin-bottom: 10px;
+            line-height: 1.8;
+        }
+        
+        .warning-box {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        
+        .warning-box h3 {
+            color: #856404;
+            margin-top: 0;
+        }
+        
+        .warning-box p {
+            color: #856404;
+            margin-bottom: 10px;
+        }
+        
+        .danger-box {
+            background: #f8d7da;
+            border-left: 4px solid #dc3545;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        
+        .danger-box h3 {
+            color: #721c24;
+            margin-top: 0;
+        }
+        
+        .danger-box p {
+            color: #721c24;
+            margin-bottom: 10px;
+        }
+        
+        .contact-box {
+            background: #e7f3ff;
+            border-left: 4px solid #4A90E2;
+            padding: 25px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        
+        .contact-box h3 {
+            color: #004085;
+            margin-top: 0;
+        }
+        
+        .contact-box p {
+            color: #004085;
+            margin-bottom: 15px;
+        }
+        
+        .contact-box a {
+            color: #4A90E2;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1em;
+        }
+        
+        .contact-box a:hover {
+            text-decoration: underline;
+        }
+        
+        .button {
+            display: inline-block;
+            background: #e74c3c;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.3s;
+            margin-top: 10px;
+        }
+        
+        .button:hover {
+            background: #c0392b;
+        }
+        
+        .back-link {
+            display: inline-block;
+            color: #4A90E2;
+            text-decoration: none;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+        
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        
+        .footer {
+            background: #f8f9fa;
+            padding: 30px;
+            text-align: center;
+            color: #666;
+            border-top: 1px solid #e0e0e0;
+        }
+        
+        .steps {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        
+        .steps ol {
+            margin-left: 20px;
+        }
+        
+        .steps li {
+            margin-bottom: 15px;
+            line-height: 1.8;
+        }
+        
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .content {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🗑️ Hesap Silme</h1>
+            <p>FinansCepte+</p>
+        </div>
+        
+        <div class="content">
+            <a href="index.html" class="back-link">← Destek Sayfasına Dön</a>
+            
+            <div class="section">
+                <h2>Hesabınızı Silmek İstiyorsunuz?</h2>
+                
+                <div class="danger-box">
+                    <h3>⚠️ Önemli Uyarı</h3>
+                    <p>Hesabınızı silmek istediğinizde aşağıdaki tüm verileriniz kalıcı olarak silinecektir:</p>
+                    <ul>
+                        <li>Kullanıcı hesap bilgileriniz</li>
+                        <li>Tüm yatırım kayıtlarınız</li>
+                        <li>Portföy verileriniz</li>
+                        <li>Yatırım alarmlarınız</li>
+                        <li>İşlem geçmişiniz</li>
+                    </ul>
+                    <p><strong>Bu işlem geri alınamaz!</strong></p>
+                </div>
+                
+                <div class="section">
+                    <h3>Hesap Silme Yöntemleri</h3>
+                    
+                    <div class="steps">
+                        <h3>Yöntem 1: Uygulama İçinden Silme (Önerilen)</h3>
+                        <ol>
+                            <li>Uygulamayı açın ve giriş yapın</li>
+                            <li>Profil sekmesine gidin</li>
+                            <li>"Hesabı Sil" butonuna tıklayın</li>
+                            <li>Onay dialoglarını tamamlayın</li>
+                            <li>Hesabınız ve tüm verileriniz anında silinecektir</li>
+                        </ol>
+                    </div>
+                    
+                    <div class="contact-box">
+                        <h3>Yöntem 2: E-posta ile Talep</h3>
+                        <p>Eğer uygulama içinden hesabınızı silemiyorsanız, aşağıdaki e-posta adresine hesap silme talebinizi gönderebilirsiniz:</p>
+                        <p><strong>E-posta:</strong> <a href="mailto:zerrebt@gmail.com?subject=Hesap Silme Talebi&body=Merhaba,%0D%0A%0D%0AHesabımın ve tüm verilerimin silinmesini talep ediyorum.%0D%0A%0D%0AE-posta adresim: [Lütfen e-posta adresinizi yazın]%0D%0A%0D%0ATeşekkürler">zerrebt@gmail.com</a></p>
+                        <p>E-posta gönderirken lütfen şunları belirtin:</p>
+                        <ul>
+                            <li>Hesabınıza kayıtlı e-posta adresi</li>
+                            <li>Hesap silme talebinizin nedeni (opsiyonel)</li>
+                        </ul>
+                        <p>Talebiniz en geç 7 iş günü içinde işleme alınacaktır.</p>
+                    </div>
+                </div>
+                
+                <div class="warning-box">
+                    <h3>📋 GDPR ve KVKK Haklarınız</h3>
+                    <p>KVKK (Kişisel Verilerin Korunması Kanunu) ve GDPR (Genel Veri Koruma Yönetmeliği) kapsamında:</p>
+                    <ul>
+                        <li>Kişisel verilerinizin silinmesini talep etme hakkına sahipsiniz</li>
+                        <li>Talep ettiğiniz takdirde verileriniz 30 gün içinde silinir</li>
+                        <li>Verilerinizin silindiğine dair onay alırsınız</li>
+                    </ul>
+                </div>
+                
+                <div class="section">
+                    <h3>Hesap Silme Sonrası</h3>
+                    <p>Hesabınız silindikten sonra:</p>
+                    <ul>
+                        <li>Tüm verileriniz kalıcı olarak silinir</li>
+                        <li>Hesabınıza tekrar erişemezsiniz</li>
+                        <li>Yeni bir hesap oluşturmak isterseniz, uygulamayı yeniden indirip kayıt olabilirsiniz</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>Alternatif Seçenekler</h2>
+                <p>Hesabınızı silmeden önce şu seçenekleri değerlendirebilirsiniz:</p>
+                <ul>
+                    <li><strong>Verilerinizi Dışa Aktarma:</strong> Önemli verilerinizi yedeklemek isterseniz, bizimle iletişime geçebilirsiniz</li>
+                    <li><strong>Geçici Dondurma:</strong> Hesabınızı geçici olarak dondurmak isterseniz, e-posta gönderebilirsiniz</li>
+                    <li><strong>Geri Bildirim:</strong> Uygulamayı iyileştirmemize yardımcı olmak için geri bildirimde bulunabilirsiniz</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <p><a href="privacy.html" class="button">Gizlilik Politikası</a></p>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>&copy; 2025 FinansCepte+. Tüm hakları saklıdır.</p>
+            <p style="margin-top: 10px; font-size: 0.9em;">
+                <a href="index.html" style="color: #4A90E2; text-decoration: none;">Destek</a> | 
+                <a href="privacy.html" style="color: #4A90E2; text-decoration: none;">Gizlilik Politikası</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
